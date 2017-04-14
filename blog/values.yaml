@@ -13,9 +13,13 @@ service:
   internalPort: 5555
   externalIPs: []
   liveness:
-    timeoutSeconds: 15
+    timeoutSeconds: 45
+    initialDelaySeconds: 30
+    periodSeconds: 120
   readiness:
-    timeoutSeconds: 15
+    timeoutSeconds: 30
+    initialDelaySeconds: 20
+    periodSeconds: 60   
 resources:
   limits:
     cpu: 100m

@@ -22,14 +22,14 @@ spec:
             path: /
             port: {{ .Values.service.internalPort }}
           timeoutSeconds: {{ .Values.service.liveness.timeoutSeconds }}
-          initialDelaySeconds: 15
-          periodSeconds: 20
+          initialDelaySeconds: {{ .Values.service.liveness.initialDelaySeconds }}
+          periodSeconds: {{ .Values.service.liveness.periodSeconds }}
         readinessProbe:
           httpGet:
             path: /
             port: {{ .Values.service.internalPort }}
           timeoutSeconds: {{ .Values.service.readiness.timeoutSeconds }}
-          initialDelaySeconds: 15
-          periodSeconds: 20          
+          initialDelaySeconds: {{ .Values.service.readiness.initialDelaySeconds }}
+          periodSeconds: {{ .Values.service.readiness.periodSeconds }}
         resources:
 {{ toYaml .Values.resources | indent 12 }}
