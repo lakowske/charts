@@ -1,0 +1,27 @@
+# Default values for blog.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 1
+image:
+  repository: lakowske/blog
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  name: blog
+  type: ClusterIP
+  externalPort: 80
+  internalPort: 5555
+  externalIPs:
+    - 192.168.99.100
+  liveness:
+    timeoutSeconds: 15
+  readiness:
+    timeoutSeconds: 15
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
