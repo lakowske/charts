@@ -1,0 +1,21 @@
+apiVersion: v1
+entries:
+  blog:
+  - apiVersion: v1
+    created: 2017-04-14T17:20:09.814929007-05:00
+    description: A Helm chart for Kubernetes
+    digest: cd48ae9ddb155d243f7d1d2eb454a3b2dc00987cf4b8c62955a9b66fd8669de4
+    name: blog
+    urls:
+    - blog-0.1.0.tgz
+    version: 0.1.0
+  minikube-ingress:
+  - apiVersion: v1
+    created: 2017-04-14T17:20:09.816424376-05:00
+    description: Add nginx ingress to minikube
+    digest: 69ab9b11f421fa53b2bcbf4cd0baaae908b43b37431db1646580388da4a1579c
+    name: minikube-ingress
+    urls:
+    - minikube-ingress-0.1.0.tgz
+    version: 0.1.0
+generated: 2017-04-14T17:20:09.814525355-05:00
