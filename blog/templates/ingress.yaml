@@ -16,9 +16,9 @@ spec:
               servicePort: {{ .Values.service.externalPort }}
   tls:
     # With this configuration kube-lego will generate a secret in namespace foo called `example-tls`
-    # for the URL `www.example.com`
+    # for the URL `www2.sethlakowske.com`
     - hosts:
-        - "www.example.com"
+        - "www2.sethlakowske.com"
       secretName: example-tls
         
                                                                                                                                                       
