@@ -7,10 +7,18 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
-  - http:
-      paths:
-      - path: /
-        backend:
-          serviceName: {{ template "fullname" . }}
-          servicePort: {{ .Values.service.externalPort }}
-
+    - host: www2.sethlakowske.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: {{ template "fullname" . }}
+              servicePort: {{ .Values.service.externalPort }}
+  tls:
+    # With this configuration kube-lego will generate a secret in namespace foo called `example-tls`
+    # for the URL `www.example.com`
+    - hosts:
+        - "www.example.com"
+      secretName: example-tls
+        
+                                                                                                                                                      
