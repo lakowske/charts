@@ -5,9 +5,9 @@ replicaCount: 1
 image:
   repository: lakowske/blog
   tag: nginx
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 site:
-  host: "w1.st81ess.com"
+  host: "meat1.st81ess.com"
 service:
   name: blog
   type: ClusterIP
