@@ -1,0 +1,7 @@
+# Default values for rook.
+replicationSize: 1
+replicas: 1
+image:
+  repository: quay.io/rook/rookd
+  tag: master-latest
+  pullPolicy: IfNotPresent
