@@ -4,22 +4,24 @@
 replicaCount: 1
 image:
   repository: lakowske/blog
-  tag: latest
-  pullPolicy: IfNotPresent
+  tag: nginx
+  pullPolicy: Always
+site:
+  host: "meat1.st81ess.com"
 service:
   name: blog
   type: ClusterIP
   externalPort: 80
-  internalPort: 5555
+  internalPort: 80
   externalIPs: []
   liveness:
-    timeoutSeconds: 45
-    initialDelaySeconds: 30
+    timeoutSeconds: 10
+    initialDelaySeconds: 10
     periodSeconds: 120
   readiness:
-    timeoutSeconds: 30
-    initialDelaySeconds: 20
-    periodSeconds: 60   
+    timeoutSeconds: 10
+    initialDelaySeconds: 5
+    periodSeconds: 60  
 resources:
   limits:
     cpu: 100m
