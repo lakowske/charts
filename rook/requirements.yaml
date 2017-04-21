@@ -1,0 +1,4 @@
+dependencies:
+  - name: rook-operator
+    version: 0.1.0
+    repository: https://lakowske.github.io/charts/
