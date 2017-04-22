@@ -5,13 +5,13 @@ metadata:
   labels:
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
 spec:
-  type: {{ .Values.service.type }}
+  type: {{ .Values.blog.service.type }}
   ports:
-  - port: {{ .Values.service.externalPort }}
-    targetPort: {{ .Values.service.internalPort }}
+  - port: {{ .Values.blog.service.externalPort }}
+    targetPort: {{ .Values.blog.service.internalPort }}
     protocol: TCP
-    name: {{ .Values.service.name }}
+    name: {{ .Values.blog.service.name }}
   selector:
     app: {{ template "fullname" . }}
   externalIPs:
-    {{ .Values.service.externalIPs }}
+    {{ .Values.blog.service.externalIPs }}

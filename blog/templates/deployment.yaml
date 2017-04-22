@@ -16,20 +16,20 @@ spec:
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
-        - containerPort: {{ .Values.service.internalPort }}
+        - containerPort: {{ .Values.blog.service.internalPort }}
         livenessProbe:
           httpGet:
             path: /
-            port: {{ .Values.service.internalPort }}
-          timeoutSeconds: {{ .Values.service.liveness.timeoutSeconds }}
-          initialDelaySeconds: {{ .Values.service.liveness.initialDelaySeconds }}
-          periodSeconds: {{ .Values.service.liveness.periodSeconds }}
+            port: {{ .Values.blog.service.internalPort }}
+          timeoutSeconds: {{ .Values.blog.service.liveness.timeoutSeconds }}
+          initialDelaySeconds: {{ .Values.blog.service.liveness.initialDelaySeconds }}
+          periodSeconds: {{ .Values.blog.service.liveness.periodSeconds }}
         readinessProbe:
           httpGet:
             path: /
-            port: {{ .Values.service.internalPort }}
-          timeoutSeconds: {{ .Values.service.readiness.timeoutSeconds }}
-          initialDelaySeconds: {{ .Values.service.readiness.initialDelaySeconds }}
-          periodSeconds: {{ .Values.service.readiness.periodSeconds }}
+            port: {{ .Values.blog.service.internalPort }}
+          timeoutSeconds: {{ .Values.blog.service.readiness.timeoutSeconds }}
+          initialDelaySeconds: {{ .Values.blog.service.readiness.initialDelaySeconds }}
+          periodSeconds: {{ .Values.blog.service.readiness.periodSeconds }}
         resources:
 {{ toYaml .Values.resources | indent 12 }}
