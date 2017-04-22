@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A constellation of services on sethlakowske.com
+name: com-sethlakowske
+version: 0.1.0

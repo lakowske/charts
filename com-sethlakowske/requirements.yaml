@@ -1,0 +1,10 @@
+dependencies:
+  - name: rook
+    version: 0.2.0
+    repository: https://lakowske.github.io/charts/
+  - name: nginx-ingress
+    version: 0.3.1
+    repository: https://kubernetes-charts.storage.googleapis.com
+  - name: blog
+    version: 0.2.2
+    repository: https://lakowske.github.io/charts/
