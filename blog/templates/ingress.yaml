@@ -3,16 +3,16 @@ kind: Ingress
 metadata:
   name: blog
   annotations:
-{{ toYaml .Values.blog.annotations | indent 4 }}
+{{ toYaml .Values.annotations | indent 4 }}
 spec:
   rules:
-    - host: {{ .Values.blog.host }}
+    - host: {{ .Values.host }}
       http:
         paths: 
-          - path: {{ .Values.blog.path }}
+          - path: {{ .Values.path }}
             backend:
               serviceName: {{ template "fullname" . }}
-              servicePort: {{ .Values.blog.service.externalPort }}
-{{ toYaml .Values.blog.tlsConf | indent 2 }}
-
-
+              servicePort: {{ .Values.service.externalPort }}
+{{ if .Values.tlsConf }} 
+{{ toYaml .Values.tlsConf | indent 2 }}
+{{ end }}
