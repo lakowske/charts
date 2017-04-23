@@ -20,4 +20,17 @@ blog:
 #          - localkube
 #        secretName: seth-tls
   host: sqkube    
-        
+
+elasticsearch:
+  MasterReplicas: 1
+  DataReplicas: 1
+  ClientReplicas: 1
+  DataStorageClass: "rook-block"
+  DataStorageClassVersion: "beta"
+  DataMemoryRequests: "1Gi"
+  DataHeapSize: "768m"
+  DataStorage: "10Gi"
+  MasterMemoryLimits: "256Mi"
+  MasterMemoryRequests: "128Mi"
+  ClientMemoryLimits: "256Mi"
+  ClientMemoryRequests: "128Mi"
