@@ -22,15 +22,19 @@ blog:
   host: sqkube    
 
 elasticsearch:
+  ImagePullPolicy: "IfNotPresent"
   MasterReplicas: 1
   DataReplicas: 1
   ClientReplicas: 1
   DataStorageClass: "rook-block"
   DataStorageClassVersion: "beta"
+  DataStorage: "20Gi"  
   DataMemoryRequests: "1Gi"
-  DataHeapSize: "768m"
-  DataStorage: "10Gi"
-  MasterMemoryLimits: "256Mi"
-  MasterMemoryRequests: "128Mi"
-  ClientMemoryLimits: "256Mi"
-  ClientMemoryRequests: "128Mi"
+  DataMemoryLimits: "1500Mi"
+  DataHeapSize: "500m"
+  MasterHeapSize: "200m"
+  MasterMemoryLimits: "512Mi"
+  MasterMemoryRequests: "256Mi"
+  ClientMemoryLimits: "300Mi"
+  ClientMemoryRequests: "160Mi"
+  ClientHeapSize: "200m"
