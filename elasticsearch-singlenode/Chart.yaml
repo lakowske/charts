@@ -1,4 +1,4 @@
 apiVersion: v1
 description: A Helm chart for Kubernetes
-name: elasticsearchs-singlenode
+name: elasticsearch-singlenode
 version: 0.1.0
