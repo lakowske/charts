@@ -1,0 +1,12 @@
+# Default values for minikube-dashboard-ingress.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+service:
+  name: kubernetes-dashboard
+  externalPort: 80
+  internalPort: 80
+ingress:
+  host: dashboard.minikube.st81ess.com
+  class: nginx
+
+

@@ -13,5 +13,7 @@ spec:
     name: {{ .Values.service.name }}
   selector:
     app: {{ template "fullname" . }}
+  {{ if .Values.service.externalIPs }}
   externalIPs:
     {{ .Values.service.externalIPs }}
+  {{ end }}

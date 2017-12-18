@@ -1,0 +1,4 @@
+1. St81ess minikube dashboard ingress installed.
+
+   Goto {{ .Values.ingress.host }} to access your minikube dashboard.
+
