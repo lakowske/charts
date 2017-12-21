@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   blog:
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.630210559-06:00
+    created: 2017-12-20T20:33:53.310766623-06:00
     description: A Helm chart for Kubernetes
     digest: 5cc56f9d3729fc2b51d30b5a000cb1319b215f71bf64b40e4b7c18312b4015f8
     name: blog
@@ -10,7 +10,7 @@ entries:
     - blog-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.629462606-06:00
+    created: 2017-12-20T20:33:53.310433086-06:00
     description: A Helm chart for Kubernetes
     digest: b08208c600bd510ae1ea09c569cb700576b58a32691773a31a6bf2d3475e9f5a
     name: blog
@@ -18,7 +18,7 @@ entries:
     - blog-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.628617826-06:00
+    created: 2017-12-20T20:33:53.309831798-06:00
     description: A Helm chart for Kubernetes
     digest: 4071c826796ac0bf22090f335ebbfbe29f8f0b3ad5f5208bc042917736f1c09d
     name: blog
@@ -26,7 +26,7 @@ entries:
     - blog-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.626892357-06:00
+    created: 2017-12-20T20:33:53.309338184-06:00
     description: A Helm chart for Kubernetes
     digest: 4312c16f9512bed6dabedca5dfec74ae80953751f9a6d0b807ac826f5e30d81b
     name: blog
@@ -34,7 +34,7 @@ entries:
     - blog-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.62615503-06:00
+    created: 2017-12-20T20:33:53.308644364-06:00
     description: A Helm chart for Kubernetes
     digest: cd48ae9ddb155d243f7d1d2eb454a3b2dc00987cf4b8c62955a9b66fd8669de4
     name: blog
@@ -43,7 +43,7 @@ entries:
     version: 0.1.0
   com-sethlakowske:
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.634369701-06:00
+    created: 2017-12-20T20:33:53.313689583-06:00
     description: A constellation of services on sethlakowske.com
     digest: bae92b4b42634c193e839ad128647770bfb20956efcd12d75d02c1da15c44285
     name: com-sethlakowske
@@ -51,7 +51,7 @@ entries:
     - com-sethlakowske-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.632505658-06:00
+    created: 2017-12-20T20:33:53.312461003-06:00
     description: A constellation of services on sethlakowske.com
     digest: 2aa09651e46c20293cdca1810a75ad7c8f6677f40c31d28cf87d3067311c397f
     name: com-sethlakowske
@@ -60,7 +60,7 @@ entries:
     version: 0.1.0
   com-sethlakowske-ingress:
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.635869418-06:00
+    created: 2017-12-20T20:33:53.314491577-06:00
     description: A Helm chart for Kubernetes
     digest: 166859109fcbb69f2badd087f4699309130b373a2a11364eb0dc3298696bc1b9
     name: com-sethlakowske-ingress
@@ -69,16 +69,25 @@ entries:
     version: 0.1.0
   elasticsearch-singlenode:
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.636539675-06:00
+    created: 2017-12-20T20:33:53.314748467-06:00
     description: A Helm chart for Kubernetes
     digest: bf48f7be6b8d0849707da4c49f1ad64a6c89dbc71aa720f23cb2442c1cb95e6b
     name: elasticsearch-singlenode
     urls:
     - elasticsearch-singlenode-0.1.0.tgz
     version: 0.1.0
+  micro-registry:
+  - apiVersion: v1
+    created: 2017-12-20T20:33:53.3150398-06:00
+    description: A Helm chart for Kubernetes
+    digest: c1a22ac6ef6b5a328f28dd67207f377d2740351f9bb50a3dbc4e42b861f59d9c
+    name: micro-registry
+    urls:
+    - micro-registry-0.1.0.tgz
+    version: 0.1.0
   minikube-dashboard-ingress:
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.637049764-06:00
+    created: 2017-12-20T20:33:53.315602401-06:00
     description: A Helm chart for Kubernetes
     digest: afcbe11b5c9a8db6ac2538c5874b9015ca760093f762f363774a8a1c1929c2f0
     name: minikube-dashboard-ingress
@@ -87,7 +96,7 @@ entries:
     version: 0.1.0
   minikube-ingress:
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.638167693-06:00
+    created: 2017-12-20T20:33:53.316539494-06:00
     description: Add nginx ingress to minikube
     digest: e93809302cd325b36f24ba482784498fe7c3d4d1187b7931e09597e5bb6ddde4
     name: minikube-ingress
@@ -96,7 +105,7 @@ entries:
     version: 0.1.0
   nfs-persistent-volume:
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.638608326-06:00
+    created: 2017-12-20T20:33:53.316752168-06:00
     description: A Helm chart for Kubernetes
     digest: 88935895fa34b8fd81ead4b73ed3466c15215e5070057f1058138f3b5e634a3f
     name: nfs-persistent-volume
@@ -105,7 +114,7 @@ entries:
     version: 0.1.0
   rook:
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.640640601-06:00
+    created: 2017-12-20T20:33:53.318257338-06:00
     description: A Helm chart for Kubernetes
     digest: 43d3ef8cce516eeeb75bbeaf56ec625508511b70db33591a5789fafd3a15ae08
     name: rook
@@ -113,7 +122,7 @@ entries:
     - rook-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.639937418-06:00
+    created: 2017-12-20T20:33:53.318055511-06:00
     description: A Helm chart for Kubernetes
     digest: f7fa118a9dbf4e8d5db14f767828b067b639c23373cdebad8f0cffceab05ed4b
     name: rook
@@ -121,7 +130,7 @@ entries:
     - rook-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.639161057-06:00
+    created: 2017-12-20T20:33:53.317364422-06:00
     description: A Helm chart for Kubernetes
     digest: 9fdc9ee03068dc1f0fb7a3de9676487a0a71f1462a0c9b25350786b9b6b582a7
     name: rook
@@ -130,11 +139,20 @@ entries:
     version: 0.1.0
   rook-operator:
   - apiVersion: v1
-    created: 2017-12-18T18:56:50.641948647-06:00
+    created: 2017-12-20T20:33:53.318468555-06:00
     description: A Helm chart for Kubernetes
     digest: f73cbbd97766e9efb3533ab89efc5175a4909b007b71a99958d13150fb5d6062
     name: rook-operator
     urls:
     - rook-operator-0.1.0.tgz
     version: 0.1.0
-generated: 2017-12-18T18:56:50.62487826-06:00
+  simple-ingress:
+  - apiVersion: v1
+    created: 2017-12-20T20:33:53.318675768-06:00
+    description: A Helm chart for Kubernetes
+    digest: 366ee58b97143d4db91812bc4c04fbac2ade19e4983f064cd2645a6c8b11aa51
+    name: simple-ingress
+    urls:
+    - simple-ingress-0.1.0.tgz
+    version: 0.1.0
+generated: 2017-12-20T20:33:53.306388468-06:00
