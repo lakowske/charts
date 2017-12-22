@@ -22,4 +22,13 @@ nginx-ingress:
       memory: 64Mi
     requests:
       cpu: 1m
-      memory: 64Mi  
+      memory: 64Mi
+  controller:
+    service:
+      loadBalancerIP:
+
+kube-lego:
+  resources:
+    requests:
+      cpu: 1m
+      memory: 32Mi
