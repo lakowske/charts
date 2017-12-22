@@ -9,13 +9,14 @@ metadata:
     heritage: "{{ .Release.Service }}"
   annotations:
     kubernetes.io/ingress.class: {{ .Values.ingress.class }}
+{{ toYaml .Values.annotations | indent 4 }}
 spec:
   rules:
     - host: {{ .Values.ingress.host }}
       http:
         paths:
-          - path: /
+          - path: {{ .Values.ingress.path }}
             backend:
-              serviceName: {{ .Values.service.name }}
+              serviceName: {{ .Release.Name}}-{{ .Values.service.name }}
               servicePort: {{ .Values.service.externalPort }}
 

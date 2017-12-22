@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A Helm chart exposing a helm service
+name: simple-ingress
+version: 0.1.2

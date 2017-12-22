@@ -8,5 +8,5 @@ service:
 ingress:
   host: dashboard.minikube.st81ess.com
   class: nginx
-
-
+  path: /
+annotations:
