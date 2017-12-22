@@ -14,3 +14,12 @@ simple-ingress:
     externalPort: 5000
   annotations:
     kubernetes.io/tls-acme: 'true'
+
+nginx-ingress:
+  resources:
+    limits:
+      cpu: 1m
+      memory: 64Mi
+    requests:
+      cpu: 1m
+      memory: 64Mi  
