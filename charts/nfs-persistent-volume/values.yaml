@@ -1,0 +1,9 @@
+# Mount a coreos nfs node
+name: nfs-coreos-node
+nfs:
+  server: 192.168.10.100
+  path: /home/core
+pvc:
+  claimName: nfs-local-storage
+  volumeName: nfs-bootstrap
+  size: "5Gi"

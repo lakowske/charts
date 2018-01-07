@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ template "k8s-db-postgres.fullname" . }}
+  labels:
+    app: {{ template "k8s-db-postgres.name" . }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  template:
+    spec:
+      restartPolicy: {{ .Values.job.restartPolicy }}      
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: RELEASE_NAME
+              value: {{ .Release.Name }}
+          command: ["/usr/local/bin/postgres-k8s-export"]
+          resources:
+{{ toYaml .Values.resources | indent 12 }}
+
+

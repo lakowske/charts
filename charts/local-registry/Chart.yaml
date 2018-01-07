@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A local docker registry behind an nginx ingress controller
+name: local-registry
+version: 0.1.0

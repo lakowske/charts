@@ -1,0 +1,2 @@
+1. You should see a db-config ConfigMap and db-secret Secret
+

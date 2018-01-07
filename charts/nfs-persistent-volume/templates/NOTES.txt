@@ -1,0 +1,3 @@
+Added {{ .Values.name }}
+Server {{ .Values.nfs.server }}
+Path {{ .Values.nfs.path }}

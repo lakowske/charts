@@ -1,0 +1,9 @@
+{{ if and .Values.service.externalServicName .Values.service.externalName }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.service.externalServiceName }}
+spec:
+  type: ExternalName
+  externalName: {{ .Values.service.externalName }}
+{{ end }}

@@ -1,0 +1,69 @@
+# Default values for micro-registry.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+docker-registry:
+  
+  resources:
+    limits:
+      cpu: 1m
+
+  ingress:
+    enabled: true
+
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      kubernetes.io/tls-acme: 'true'    
+      ingress.kubernetes.io/proxy-body-size: 0
+    hosts:
+      - registry.gke.st81ess.com
+    tls:
+      - secretName: registry-tls
+        hosts:
+          - registry.gke.st81ess.com
+      
+nginx-ingress:
+  resources:
+    limits:
+      cpu: 10m
+      memory: 64Mi
+    requests:
+      cpu: 10m
+      memory: 64Mi
+  controller:
+    service:
+      loadBalancerIP:
+  defaultBackend:
+    resources:
+      requests:
+        cpu: 1m
+        memory: 16Mi
+      
+kube-lego:
+  resources:
+    requests:
+      cpu: 1m
+      memory: 32Mi
+  config:
+    LEGO_URL: https://acme-v01.api.letsencrypt.org/directory
+  
+kubernetes-dashboard:
+  ingress:
+    enabled: true
+
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      kubernetes.io/tls-acme: 'true'    
+
+    hosts:
+      - dashboard.gke.st81ess.com
+    tls:
+      - secretName: kubernetes-dashboard-tls
+        hosts:
+          - dashboard.gke.st81ess.com
+        
+  resources:
+    requests:
+      cpu: 50m
+      memory: 50Mi
+
+      
