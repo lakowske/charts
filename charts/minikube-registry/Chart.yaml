@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A local minikube registry with auth support
+name: minikube-registry
+version: 0.1.0

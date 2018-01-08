@@ -3,7 +3,7 @@
 # packages all the charts and places them in the dist directory
 
 : ${INPUT_DIR:="../charts"}
-: ${OUTPUT_DIR:="../dist"}
+: ${OUTPUT_DIR:="../docs"}
 
 for d in $INPUT_DIR/*/ ; do
     echo "$d"

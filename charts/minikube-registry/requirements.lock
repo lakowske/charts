@@ -1,0 +1,12 @@
+dependencies:
+- name: docker-registry
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 1.0.0
+- name: nginx-ingress
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 0.8.22
+- name: kubernetes-dashboard
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 0.4.3
+digest: sha256:7bd5bb0be679d96391ca39a4537974f69848145cdb40a30b89462132481f0504
+generated: 2018-01-08T00:23:02.054973399-06:00
