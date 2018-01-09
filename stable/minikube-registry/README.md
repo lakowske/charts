@@ -7,7 +7,7 @@ need to use docker login.
 ## Configure Minikube
 
 ```bash
-# Docker engine needs to be advised to use an insecure registry
+# Docker engine needs to be advised to use an insecure registry. *.st81ess.com resolves to 192.168.99.100
 minikube start --cpus 4 --disk-size 100g --memory 6000 --insecure-registry registry.minikube.st81ess.com:80
 ```
 
