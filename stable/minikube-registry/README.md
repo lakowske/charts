@@ -4,9 +4,10 @@ A parent chart that contains a nginx controller, docker registry and
 dashboard.  Uses basic auth to protect the registry, so a user will
 need to use docker login.
 
-## Configure Minikube to use the registry
+## Configure Minikube
 
 ```bash
+# Docker engine needs to be advised to use an insecure registry
 minikube start --cpus 4 --disk-size 100g --memory 6000 --insecure-registry registry.minikube.st81ess.com:80
 ```
 
