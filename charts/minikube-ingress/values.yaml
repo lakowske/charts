@@ -1,9 +1,0 @@
-externalIPs:
-  - 192.168.99.100
-  
-nginx-ingress:
-  controller:
-    service:
-      type: ClusterIP
-      externalIPs:
-        - 192.168.99.100

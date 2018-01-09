@@ -2,7 +2,7 @@
 
 # packages all the charts and places them in the dist directory
 
-: ${INPUT_DIR:="../charts"}
+: ${INPUT_DIR:="../stable"}
 : ${OUTPUT_DIR:="../docs"}
 
 for d in $INPUT_DIR/*/ ; do
@@ -11,3 +11,4 @@ for d in $INPUT_DIR/*/ ; do
 done
 
 helm repo index $OUTPUT_DIR
+git add ../docs

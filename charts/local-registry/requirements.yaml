@@ -1,7 +1,0 @@
-dependencies:
-- name: docker-registry
-  version: ">0.0.1"
-  repository: https://kubernetes-charts.storage.googleapis.com/
-- name: nginx-ingress
-  version: ">0.0.1"
-  repository: https://kubernetes-charts.storage.googleapis.com/

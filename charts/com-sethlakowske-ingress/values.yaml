@@ -1,8 +1,0 @@
-nginx-ingress:
-  controller:
-    service:
-      type: ClusterIP
-      externalIPs:
-        - 107.150.63.115
-        - 107.150.63.116
-        - 107.150.63.117      

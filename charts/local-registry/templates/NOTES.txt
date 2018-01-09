@@ -1,2 +1,0 @@
-Installed a registry at {{ index .Values "docker-registry" "ingress" "hosts" }}
-

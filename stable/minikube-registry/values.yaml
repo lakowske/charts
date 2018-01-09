@@ -1,0 +1,63 @@
+# Default values for micro-registry.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+docker-registry:
+  
+  resources:
+    requests:
+      cpu: 1m
+
+  ingress:
+    enabled: true
+
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      ingress.kubernetes.io/proxy-body-size: 0
+
+      ingress.kubernetes.io/auth-type: basic
+      ingress.kubernetes.io/auth-secret: registry-auth
+      ingress.kubernetes.io/auth-realm: "Authentication Required - registry"
+      
+    hosts:
+      - registry.minikube.st81ess.com
+      
+nginx-ingress:
+  resources:
+    limits:
+      cpu: 10m
+      memory: 64Mi
+    requests:
+      cpu: 10m
+      memory: 64Mi
+  controller:
+    service:
+      externalIPs:
+        - "192.168.99.100"
+  defaultBackend:
+    resources:
+      requests:
+        cpu: 1m
+        memory: 16Mi
+      
+kube-lego:
+  resources:
+    requests:
+      cpu: 1m
+      memory: 32Mi
+  config:
+    LEGO_URL: https://acme-staging.api.letsencrypt.org/directory
+  
+kubernetes-dashboard:
+  ingress:
+    enabled: true
+
+    annotations:
+      kubernetes.io/ingress.class: nginx
+
+    hosts:
+      - dashboard.minikube.st81ess.com
+        
+  resources:
+    requests:
+      cpu: 50m
+      memory: 50Mi
