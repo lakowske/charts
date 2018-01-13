@@ -6,9 +6,6 @@ docker-registry:
   resources:
     requests:
       cpu: 1m
-
-  service:
-    port: 80
     
   ingress:
     enabled: true

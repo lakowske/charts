@@ -2,6 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 replicaCount: 1
+registryPort: 5000
 image:
   repository: hyper/docker-registry-web
   tag: latest

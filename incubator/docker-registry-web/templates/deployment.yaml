@@ -21,7 +21,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
            - name: REGISTRY_URL
-             value: http://{{ .Release.Name }}-docker-registry/v2
+             value: http://{{ .Release.Name }}-docker-registry:{{ .Values.registryPort }}/v2
            - name: REGISTRY_NAME
              value: mini-registry
           ports:
