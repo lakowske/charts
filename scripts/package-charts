@@ -7,6 +7,7 @@
 
 for d in $INPUT_DIR/*/ ; do
     echo "$d"
+    (cd $d ; helm dep update)
     helm package -d $OUTPUT_DIR $d
 done
 

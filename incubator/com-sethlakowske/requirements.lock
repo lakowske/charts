@@ -1,27 +1,9 @@
 dependencies:
-- condition: ""
-  enabled: false
-  name: rook
-  repository: https://lakowske.github.io/charts/
-  tags: null
-  version: 0.3.0
-- condition: ""
-  enabled: false
-  name: nginx-ingress
+- name: nginx-ingress
   repository: https://kubernetes-charts.storage.googleapis.com
-  tags: null
   version: 0.3.1
-- condition: ""
-  enabled: false
-  name: blog
+- name: blog
   repository: https://lakowske.github.io/charts/
-  tags: null
   version: 0.2.2
-- condition: ""
-  enabled: false
-  name: elasticsearch
-  repository: https://storage.googleapis.com/kubernetes-charts-incubator/
-  tags: null
-  version: 0.1.4
-digest: sha256:0f26e466f9ee91f7f6be304878f10a2dd679393586be6b8b76b722cd7226f2f5
-generated: 2017-04-23T08:44:56.871632517-05:00
+digest: sha256:6a3402418308b56cfabfc6973c195c5d983bf3b3f9d498d24af3f39b64cec623
+generated: 2018-01-12T20:55:26.831135081-06:00
