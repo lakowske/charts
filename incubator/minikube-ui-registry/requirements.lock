@@ -1,0 +1,6 @@
+dependencies:
+- name: minikube-registry
+  repository: https://lakowske.github.io/charts/
+  version: 0.1.0
+digest: sha256:8385c8bd01a928aa68d097f2ff921f2bd974d273c2e8edb44746dc4a7bfd2208
+generated: 2018-01-12T20:32:49.316732933-06:00

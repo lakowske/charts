@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   blog:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.706783084-06:00
+    created: 2018-01-12T20:49:31.337734377-06:00
     description: A Helm chart for Kubernetes
     digest: 2a45beffd626c10dd194e0d2fd504aa8d1b0884460724577d6f1d46a02e5a667
     name: blog
@@ -11,7 +11,7 @@ entries:
     version: 0.2.2
   com-sethlakowske:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.708469053-06:00
+    created: 2018-01-12T20:49:31.338783022-06:00
     description: A constellation of services on sethlakowske.com
     digest: bae92b4b42634c193e839ad128647770bfb20956efcd12d75d02c1da15c44285
     name: com-sethlakowske
@@ -20,16 +20,25 @@ entries:
     version: 0.2.0
   com-sethlakowske-ingress:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.709826309-06:00
+    created: 2018-01-12T20:49:31.339430426-06:00
     description: A Helm chart for Kubernetes
     digest: 166859109fcbb69f2badd087f4699309130b373a2a11364eb0dc3298696bc1b9
     name: com-sethlakowske-ingress
     urls:
     - com-sethlakowske-ingress-0.1.0.tgz
     version: 0.1.0
+  docker-registry-web:
+  - apiVersion: v1
+    created: 2018-01-12T20:49:31.339658113-06:00
+    description: A Helm chart for Kubernetes
+    digest: dae0d767d703de806adef207c0c38be14cd098d40ec7e227b28611cad153f07f
+    name: docker-registry-web
+    urls:
+    - docker-registry-web-0.1.0.tgz
+    version: 0.1.0
   elasticsearch-singlenode:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.710515389-06:00
+    created: 2018-01-12T20:49:31.339868725-06:00
     description: A Helm chart for Kubernetes
     digest: bf48f7be6b8d0849707da4c49f1ad64a6c89dbc71aa720f23cb2442c1cb95e6b
     name: elasticsearch-singlenode
@@ -38,7 +47,7 @@ entries:
     version: 0.1.0
   k8s-db-postgres:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.711268026-06:00
+    created: 2018-01-12T20:49:31.340482148-06:00
     description: A Helm chart for Kubernetes
     digest: 36537594dbd77c48c1255ff6058c3578dff8c387806fe8af1acc31c888ea6d7f
     name: k8s-db-postgres
@@ -47,7 +56,7 @@ entries:
     version: 0.1.0
   micro-registry:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.713035344-06:00
+    created: 2018-01-12T20:49:31.342209995-06:00
     description: A Helm chart for Kubernetes
     digest: d233a41abcc3a63317ec1daf39407c5565275b54c19e31a13de8f4b9acb91b79
     name: micro-registry
@@ -56,7 +65,7 @@ entries:
     version: 0.1.0
   minikube-ingress:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.714589262-06:00
+    created: 2018-01-12T20:49:31.342861502-06:00
     description: Add nginx ingress to minikube
     digest: e93809302cd325b36f24ba482784498fe7c3d4d1187b7931e09597e5bb6ddde4
     name: minikube-ingress
@@ -65,16 +74,16 @@ entries:
     version: 0.1.0
   minikube-registry:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.716989945-06:00
+    created: 2018-01-12T20:49:31.345093653-06:00
     description: A local minikube registry with auth support
-    digest: 63bef38a177897458c703686f8e1505caea468db7104b3a72f650c6c9c9d4949
+    digest: f79c6a64dd510903b7db01881c4ec7e8e9c343ef49576ca9e5a55247845ab7bf
     name: minikube-registry
     urls:
     - minikube-registry-0.1.0.tgz
     version: 0.1.0
   nfs-persistent-volume:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.717602182-06:00
+    created: 2018-01-12T20:49:31.345272205-06:00
     description: A Helm chart for Kubernetes
     digest: 88935895fa34b8fd81ead4b73ed3466c15215e5070057f1058138f3b5e634a3f
     name: nfs-persistent-volume
@@ -83,7 +92,7 @@ entries:
     version: 0.1.0
   rook:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.718216379-06:00
+    created: 2018-01-12T20:49:31.34542074-06:00
     description: A Helm chart for Kubernetes
     digest: 43d3ef8cce516eeeb75bbeaf56ec625508511b70db33591a5789fafd3a15ae08
     name: rook
@@ -92,7 +101,7 @@ entries:
     version: 0.3.0
   rook-operator:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.71886674-06:00
+    created: 2018-01-12T20:49:31.345547557-06:00
     description: A Helm chart for Kubernetes
     digest: f73cbbd97766e9efb3533ab89efc5175a4909b007b71a99958d13150fb5d6062
     name: rook-operator
@@ -101,11 +110,11 @@ entries:
     version: 0.1.0
   simple-ingress:
   - apiVersion: v1
-    created: 2018-01-08T23:38:19.719070562-06:00
+    created: 2018-01-12T20:49:31.345704859-06:00
     description: A Helm chart exposing a helm service
     digest: e713cfc935cab1cf7a51ecf92456314cee8b4ebcd71d41d7852e00c4d3e93bd4
     name: simple-ingress
     urls:
     - simple-ingress-0.1.2.tgz
     version: 0.1.2
-generated: 2018-01-08T23:38:19.706417877-06:00
+generated: 2018-01-12T20:49:31.33739061-06:00
