@@ -1,0 +1,7 @@
+1. Get the application URL by running these commands:
+
+
+Installs Jenkins, Registry and minikube dashboard.  To receive Jenkins
+admin password:
+
+printf $(kubectl get secret --namespace default {{ .Release.Name }}-jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode);echo

@@ -1,0 +1,33 @@
+# Default values for minikube-jenkins-registry.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+jenkins:
+  Master:
+    ImageTag: 2.107.1-alpine
+    HostName: jenkins.minikube.st81ess.com
+    ServiceType: ClusterIP
+    ImagePullPolicy: IfNotPresent
+    Ingress:
+      Annotations:
+        kubernetes.io/ingress.class: nginx
+        # kubernetes.io/tls-acme: "true"
+
+    InstallPlugins:
+      - bitbucket:1.1.8
+      - bitbucket-oauth:0.6
+      - kubernetes:1.1
+      - workflow-aggregator:2.5
+      - workflow-job:2.17
+      - credentials-binding:1.13
+      - git:3.7.0
+  # Bitbucket Oauth consumer token
+  Bitbucket:
+    SecretName: jenkins-robot
+    Key: 
+    Secret:
+  Persistence:
+    ExistingClaim: jenkins-pvc
+
+persistence:
+  hostpath: /Users/home/k8s/jenkins

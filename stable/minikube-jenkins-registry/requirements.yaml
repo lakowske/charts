@@ -1,0 +1,7 @@
+dependencies:
+- name: minikube-registry
+  version: ">0.0.1"
+  repository: https://lakowske.github.io/charts
+- name: jenkins
+  version: ">0.0.1"
+  repository: https://kubernetes-charts.storage.googleapis.com/
