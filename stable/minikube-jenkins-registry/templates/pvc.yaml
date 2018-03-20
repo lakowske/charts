@@ -2,7 +2,7 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: jenkins-pvc
+  name: jenkins-pv
   labels:
     type: local
 spec:
@@ -13,4 +13,19 @@ spec:
     - ReadWriteOnce
   hostPath:
     path: "{{ .Values.persistence.hostpath }}"
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: jenkins-pvc
+spec:
+  storageClassName: manual
+  selector:
+    matchLabels:
+      type: local
+  resources:
+    requests:
+      storage: 9Gi      
+  accessModes:
+    - ReadWriteOnce    
 {{ end }}
