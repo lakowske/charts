@@ -56,7 +56,11 @@ kubernetes-dashboard:
 
     hosts:
       - dashboard.minikube.st81ess.com
-        
+
+  service:
+    type: NodePort
+    nodePort: 30443
+    
   resources:
     requests:
       cpu: 50m

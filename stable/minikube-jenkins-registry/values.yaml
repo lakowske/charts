@@ -30,4 +30,6 @@ jenkins:
     ExistingClaim: jenkins-pvc
 
 persistence:
+  create: true
+  existing: jenkins-pvc
   hostpath: /Users/home/k8s/jenkins
