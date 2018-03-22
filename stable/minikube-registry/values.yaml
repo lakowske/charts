@@ -22,6 +22,7 @@ docker-registry:
       - registry.minikube.st81ess.com
       
 nginx-ingress:
+  
   resources:
     limits:
       cpu: 10m
@@ -30,6 +31,8 @@ nginx-ingress:
       cpu: 10m
       memory: 64Mi
   controller:
+    image:
+      tag: 0.9.0-beta.15
     service:
       externalIPs:
         - "192.168.99.100"
