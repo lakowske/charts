@@ -2,16 +2,16 @@ apiVersion: v1
 entries:
   blog:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.383651882-05:00
+    created: 2019-02-24T17:36:22.261715701-06:00
     description: A Helm chart for Kubernetes
-    digest: 2a45beffd626c10dd194e0d2fd504aa8d1b0884460724577d6f1d46a02e5a667
+    digest: b936c04015c5fcf4dd31ff58ab8e2a728f7d7c10fe8e110f06cad88fa169dc6d
     name: blog
     urls:
     - blog-0.2.2.tgz
     version: 0.2.2
   com-sethlakowske:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.385674328-05:00
+    created: 2019-02-24T17:36:22.263257274-06:00
     description: A constellation of services on sethlakowske.com
     digest: 589cb3dfa2b685ed2bc0ae2475d02b5e93b43b4cccbd267b1618588d8aff18e4
     name: com-sethlakowske
@@ -20,7 +20,7 @@ entries:
     version: 0.2.0
   com-sethlakowske-ingress:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.386928941-05:00
+    created: 2019-02-24T17:36:22.264379525-06:00
     description: A Helm chart for Kubernetes
     digest: 166859109fcbb69f2badd087f4699309130b373a2a11364eb0dc3298696bc1b9
     name: com-sethlakowske-ingress
@@ -29,7 +29,7 @@ entries:
     version: 0.1.0
   docker-registry-web:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.387679384-05:00
+    created: 2019-02-24T17:36:22.265298954-06:00
     description: A Helm chart for Kubernetes
     digest: 8b28fcc93d4af9ce366e14c999b43f419a6979ae255f779d114c270b71dc2b69
     name: docker-registry-web
@@ -38,7 +38,7 @@ entries:
     version: 0.1.0
   elasticsearch-singlenode:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.388503107-05:00
+    created: 2019-02-24T17:36:22.265815121-06:00
     description: A Helm chart for Kubernetes
     digest: bf48f7be6b8d0849707da4c49f1ad64a6c89dbc71aa720f23cb2442c1cb95e6b
     name: elasticsearch-singlenode
@@ -47,25 +47,35 @@ entries:
     version: 0.1.0
   k8s-db-postgres:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.389789106-05:00
+    created: 2019-02-24T17:36:22.267546422-06:00
     description: A Helm chart for Kubernetes
-    digest: 3429c0850a1656830918cdf934798f89f8da548f7d62936bd28f92f4502ca9ca
+    digest: 62cf24ff9460a037c28f7be3975138f7623d93f8cfdecdfa7971237830ad945c
     name: k8s-db-postgres
     urls:
     - k8s-db-postgres-0.1.0.tgz
     version: 0.1.0
   micro-registry:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.392505063-05:00
+    created: 2019-02-24T17:36:22.270213151-06:00
     description: A Helm chart for Kubernetes
-    digest: c90ce43494f68bf5d485fc86e1c2334ec15416982d8e64b468ffab824e280578
+    digest: df5b0ea8eb0dc981a60a27401089cfefc087fbd6b9d6ef960a9cb35bc8ea0c93
     name: micro-registry
     urls:
     - micro-registry-0.1.0.tgz
     version: 0.1.0
+  mini-ingress:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-02-24T17:36:22.272763546-06:00
+    description: A Helm chart for Kubernetes
+    digest: d8d76af62b0fdd50c42a88bdbbabb7fdcef48ed845e451a64b42d954a6d01df0
+    name: mini-ingress
+    urls:
+    - mini-ingress-0.1.0.tgz
+    version: 0.1.0
   minikube-ingress:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.394149288-05:00
+    created: 2019-02-24T17:36:22.273883523-06:00
     description: Add nginx ingress to minikube
     digest: e93809302cd325b36f24ba482784498fe7c3d4d1187b7931e09597e5bb6ddde4
     name: minikube-ingress
@@ -74,25 +84,25 @@ entries:
     version: 0.1.0
   minikube-jenkins-registry:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.398737375-05:00
+    created: 2019-02-24T17:36:22.277582053-06:00
     description: A Helm chart for Kubernetes
-    digest: 8996db9ff70956c9da8bebd80408b66037985203b419d5bcda5fd56bc44c0e71
+    digest: d04331a83ffe9c664b28449386cc49e9d66b63bb38336806e8684af571fc56c9
     name: minikube-jenkins-registry
     urls:
     - minikube-jenkins-registry-0.1.0.tgz
     version: 0.1.0
   minikube-registry:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.400197813-05:00
+    created: 2019-02-24T17:36:22.279455897-06:00
     description: A local minikube registry with auth support
-    digest: e1589f66673ab32f2a63a568506da16be560b72d2cddf34a47e3a5e3773a057f
+    digest: f61b907aec0a5ca429dfc13f837e6be8df157c62d62321842c83b988051b460a
     name: minikube-registry
     urls:
     - minikube-registry-0.1.0.tgz
     version: 0.1.0
   minikube-ui-registry:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.402421993-05:00
+    created: 2019-02-24T17:36:22.282778485-06:00
     description: A Helm chart for Kubernetes
     digest: 002323d22c37755dc58c962bb9b59917a5e81da3a4006867162160f62a358070
     name: minikube-ui-registry
@@ -101,7 +111,7 @@ entries:
     version: 0.1.0
   nfs-persistent-volume:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.403001947-05:00
+    created: 2019-02-24T17:36:22.283387177-06:00
     description: A Helm chart for Kubernetes
     digest: 88935895fa34b8fd81ead4b73ed3466c15215e5070057f1058138f3b5e634a3f
     name: nfs-persistent-volume
@@ -110,7 +120,7 @@ entries:
     version: 0.1.0
   rook:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.403568032-05:00
+    created: 2019-02-24T17:36:22.28392348-06:00
     description: A Helm chart for Kubernetes
     digest: 43d3ef8cce516eeeb75bbeaf56ec625508511b70db33591a5789fafd3a15ae08
     name: rook
@@ -119,7 +129,7 @@ entries:
     version: 0.3.0
   rook-operator:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.404232877-05:00
+    created: 2019-02-24T17:36:22.284464755-06:00
     description: A Helm chart for Kubernetes
     digest: f73cbbd97766e9efb3533ab89efc5175a4909b007b71a99958d13150fb5d6062
     name: rook-operator
@@ -128,11 +138,11 @@ entries:
     version: 0.1.0
   simple-ingress:
   - apiVersion: v1
-    created: 2018-03-21T20:40:15.404446968-05:00
+    created: 2019-02-24T17:36:22.284695744-06:00
     description: A Helm chart exposing a helm service
-    digest: e713cfc935cab1cf7a51ecf92456314cee8b4ebcd71d41d7852e00c4d3e93bd4
+    digest: afcaf26f318fe50f61cd6fd8935d6fbe436abc27770d0d4251bf1f430212be86
     name: simple-ingress
     urls:
     - simple-ingress-0.1.2.tgz
     version: 0.1.2
-generated: 2018-03-21T20:40:15.382853519-05:00
+generated: 2019-02-24T17:36:22.260808103-06:00
