@@ -1,0 +1,9 @@
+dependencies:
+- name: nginx-ingress
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 1.3.1
+- name: kubernetes-dashboard
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 1.2.0
+digest: sha256:e0197f57f16e0c51a46b5dabe24b32cc5d61f4703afc0f5db7594781c283dbd0
+generated: 2019-02-25T21:56:01.131685754-06:00

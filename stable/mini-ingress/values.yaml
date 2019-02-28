@@ -1,0 +1,20 @@
+# Default values for mini-ingress.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+nginx-ingress:
+  controller:
+    hostNetwork: true
+    service:
+      clusterIP: 10.96.0.11
+      type: NodePort
+
+kubernetes-dashboard:
+  enableInsecureLogin: true
+  enableSkipLogin: true
+  rbac:
+    clusterAdminRole: true
+  ingress:
+    enabled: true
+    hosts:
+      - dashboard.mini.st81ess.com
